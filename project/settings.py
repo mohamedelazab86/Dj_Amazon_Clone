@@ -38,6 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+
+    # my packages
+    "taggit",
+    'django_summernote',
+
     # my apps
     'products',
 ]
@@ -119,6 +124,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+  
+]
+STATIC_ROOT='/static/'
+
+# media
+MEDIA_URL='/media/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static"
+   
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
